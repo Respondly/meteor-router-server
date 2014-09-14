@@ -1,0 +1,14 @@
+{
+  "name": "routing-server",
+  "description": "Express style server routing.",
+  "homepage": "",
+  "author": "",
+  "version": "0.0.1",
+  "git": "",
+  "packages": {
+    "munit": {},
+    "util": {
+      "path": "../../../packages-public/packages/util"
+    }
+  }
+}
