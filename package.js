@@ -14,8 +14,7 @@ Npm.depends({
 
 
 Package.on_use(function (api) {
-  api.use(['coffeescript', 'http']);
-  api.use(['templating'], 'client');
+  api.use(['coffeescript', 'http', 'webapp']);
   api.use(['css-stylus', 'ctrl', 'util']);
   api.export('Server');
 
