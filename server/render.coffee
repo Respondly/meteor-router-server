@@ -9,7 +9,7 @@ Renders a web [response] using the appropriate renderer for the given file.
   See: http://jade-lang.com/api/
 
   This method is typically called from a curried function attached to the
-  server [response] object, attached wtihin the [core-router] server package.
+  server [response] object, attached within the [router-server] package.
 
 @param res:       The server response.
 @param filePath:  The path to the file to render.
