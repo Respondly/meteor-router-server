@@ -2,12 +2,8 @@
 Simple server-side routing.
 
 
-## Installation
-When running for the first time:
 
 
-    mrt update
-    package update
 
 ## Example
 Registering routes is analagous to how this is done within **Express.js**.

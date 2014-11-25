@@ -1,6 +1,10 @@
 Package.describe({
-  summary: 'Simple server-side routing'
+  name: 'respondly:router-server',
+  summary: 'Simple server-side routing',
+  version: '0.0.1',
+  git: 'https://github.com/Respondly/meteor-router-server.git'
 });
+
 
 
 Npm.depends({
@@ -15,7 +19,7 @@ Npm.depends({
 
 Package.on_use(function (api) {
   api.use(['coffeescript', 'http', 'webapp']);
-  api.use(['css-stylus', 'ctrl', 'util']);
+  api.use(['respondly:css-stylus', 'respondly:util']);
   api.export('Server');
 
   // Generated with: github.com/philcockfield/meteor-package-paths
