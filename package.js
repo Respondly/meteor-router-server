@@ -17,18 +17,18 @@ Npm.depends({
 
 
 
-Package.on_use(function (api) {
+Package.onUse(function (api) {
   api.use(['coffeescript', 'http', 'webapp']);
   api.use(['respondly:css-stylus', 'respondly:util']);
   api.export('Server');
 
   // Generated with: github.com/philcockfield/meteor-package-paths
-  api.add_files('server/ns.js', 'server');
-  api.add_files('server/router.coffee', 'server');
-  api.add_files('server/render-jade.coffee', 'server');
-  api.add_files('server/render-stylus.coffee', 'server');
-  api.add_files('server/render.coffee', 'server');
-  api.add_files('server/response-send.coffee', 'server');
+  api.addFiles('server/ns.js', 'server');
+  api.addFiles('server/router.coffee', 'server');
+  api.addFiles('server/render-jade.coffee', 'server');
+  api.addFiles('server/render-stylus.coffee', 'server');
+  api.addFiles('server/render.coffee', 'server');
+  api.addFiles('server/response-send.coffee', 'server');
 
 });
 
