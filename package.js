@@ -19,7 +19,8 @@ Npm.depends({
 
 Package.onUse(function (api) {
   api.use(['coffeescript', 'http', 'webapp']);
-  api.use(['respondly:css-stylus', 'respondly:util']);
+  api.use('respondly:css-stylus');
+  api.use('respondly:util');
   api.export('Server');
 
   // Generated with: github.com/philcockfield/meteor-package-paths
