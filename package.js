@@ -18,7 +18,9 @@ Npm.depends({
 
 
 Package.onUse(function (api) {
-  api.use(['coffeescript', 'http', 'webapp']);
+  api.use('coffeescript@1.0.4');
+  api.use('http@1.0.8')
+  api.use('webapp@1.1.4');
   api.use('respondly:css-stylus@1.0.0');
   api.use('respondly:util@1.0.0');
   api.export('Server');
