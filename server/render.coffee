@@ -53,7 +53,7 @@ Server.render.response = (res, filePath, options) ->
 
   # Render format not supported.
   else
-    res.send 500, errResult(err, "Couldn't render.")
+    res.send 500, errResult(null, "Render format not supported.")
     return
 
 
