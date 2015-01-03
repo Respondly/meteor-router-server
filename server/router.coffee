@@ -5,6 +5,8 @@ Server.routes = routes = null
 userAgent = Npm.require 'useragent'
 connect   = Npm.require 'connect'
 Fiber     = Npm.require 'fibers'
+fsPath    = Npm.require 'path'
+
 
 
 processRequest = (req, res, next) ->
@@ -92,5 +94,18 @@ Server.put    = (path, handler) -> Server.addRoute(path, 'PUT', handler)
 Server.post   = (path, handler) -> Server.addRoute(path, 'POST', handler)
 Server.delete = (path, handler) -> Server.addRoute(path, 'DELETE', handler)
 
+
+
+###
+Resolves the path to the built location of the specified package.
+@param packageName: The name of the package.
+@param path:        The sub-path to append to the string.
+@returns string.
+###
+Server.packageBuildPath = (packageName, path) ->
+  packageName = packageName.replace(/:/g, '_')
+  result = fsPath.resolve("./assets/packages/#{ packageName }")
+  result = "#{ result }/#{ path.remove(/^\//) }" if Object.isString(path)
+  result
 
 
