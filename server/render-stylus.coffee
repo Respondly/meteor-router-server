@@ -51,5 +51,5 @@ Server.render.stylusAsync = (filePath, callback) ->
 
 Meteor.startup ->
   # Add the 'core' mixins by default.
-  Server.render.stylusMixins(fsPath.resolve('./assets/packages/core/shared/css_mixins'))
+  Server.render.stylusMixins(fsPath.resolve('./assets/packages/respondly_css-common/shared/css-mixins'))
 
