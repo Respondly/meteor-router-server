@@ -1,9 +1,7 @@
 # Server Router
 Simple server-side routing.
 
-
-
-
+[![Circle CI](https://circleci.com/gh/Respondly/meteor-router-server.svg?style=svg)](https://circleci.com/gh/Respondly/meteor-router-server)
 
 ## Example
 Registering routes is analagous to how this is done within **Express.js**.
