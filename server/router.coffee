@@ -26,6 +26,7 @@ processRequest = (req, res, next) ->
             # Store the parameters extracted from the route on the [request] object.
             req.params = context.params
             req.userAgent = userAgent.lookup(req.headers['user-agent'])
+            req.path = context.path
 
             # Add methods to the [response].
             res.send = (params...) -> Server.send(res, params)
